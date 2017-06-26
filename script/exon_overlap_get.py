@@ -35,7 +35,7 @@ def gene_parser(bed):
                 # intronNum -= 1
                 #print(exon_starts[1],exon_ends[1])
 
-                ret_lst.append([chrom, geneName, strand, exon_len, exon_starts,exon_ends,])
+                ret_lst.append([chrom, geneName, strand, exon_len, exon_starts,exon_ends])
 
             except:
                 print >> sys.stderr, "[NOTE:input bed must be 12-column] skipped this line: " + line,
